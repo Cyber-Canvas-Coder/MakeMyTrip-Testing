@@ -36,7 +36,8 @@ The project integrates Extent Reports for detailed test reporting.
 
 📂 Project Structure
 
-<img width="549" height="213" alt="image" src="https://github.com/user-attachments/assets/3f6494f0-2370-484e-92d3-4c0da3449e56" />
+![Uploading image.png…]()
+
 
 
 ⚡ How to Run Tests
