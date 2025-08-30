@@ -34,14 +34,10 @@ The project integrates Extent Reports for detailed test reporting.
 
 <img width="1920" height="1382" alt="screencapture-file-C-Users-SAYANTAN-MONDAL-Desktop-project-CTS-test-output-ExtentReport-html" src="https://github.com/user-attachments/assets/bcfffd1e-fbe3-4ae7-a005-f60750168d62" />
 
-##📂 Project Structure
-MakeMyTrip-Testing/
-│── src/test/java/         # Test Scripts
-│── src/main/java/         # Page Object Model Classes
-│── test-output/           # TestNG Default Reports
-│── extent-report/         # Extent Reports HTML
-│── pom.xml                # Maven Dependencies
-│── README.md              # Project Documentation
+📂 Project Structure
+
+<img width="549" height="213" alt="image" src="https://github.com/user-attachments/assets/3f6494f0-2370-484e-92d3-4c0da3449e56" />
+
 
 ⚡ How to Run Tests
 
