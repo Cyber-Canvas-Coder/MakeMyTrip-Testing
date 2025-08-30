@@ -1,0 +1,28 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="AutomationSuite" parallel="false">
+
+    <listeners>
+        <listener class-name="runners.TestListener"/>
+    </listeners>
+   
+    <parameter name="browser" value="firefox"/>   
+
+    <test name="Login Test">
+        <classes>
+            <class name="tests.LoginTest"/>
+        </classes>
+    </test>
+    	<test name="Flight Test">
+		<classes>
+			<class name="tests.FlightTest"></class>
+		</classes>
+	</test>
+  
+
+    <test name="Hotel Test">
+        <classes>
+            <class name="tests.HotelTest"/>
+        </classes>
+    </test>
+
+</suite>
