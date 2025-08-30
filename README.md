@@ -34,7 +34,7 @@ The project integrates Extent Reports for detailed test reporting.
 
 <img width="1920" height="1382" alt="screencapture-file-C-Users-SAYANTAN-MONDAL-Desktop-project-CTS-test-output-ExtentReport-html" src="https://github.com/user-attachments/assets/bcfffd1e-fbe3-4ae7-a005-f60750168d62" />
 
-#📂 Project Structure
+##📂 Project Structure
 MakeMyTrip-Testing/
 │── src/test/java/         # Test Scripts
 │── src/main/java/         # Page Object Model Classes
