@@ -28,8 +28,8 @@ public class HotelTest {
     public void hotelSearchWithFutureDatesTest() throws InterruptedException {
     	hotel.selectHotelOption();
         hotel.enterDestination("Ranchi");
-        hotel.selectCheckInDate("Sun Aug 31 2025");
-        hotel.selectCheckOutDate("Wed Sep 03 2025");
+        hotel.selectCheckInDate("Thu Sep 04 2025");
+        hotel.selectCheckOutDate("Sat Sep 06 2025");
         hotel.selectRoomAndGuest();
         hotel.clickSearch();
 

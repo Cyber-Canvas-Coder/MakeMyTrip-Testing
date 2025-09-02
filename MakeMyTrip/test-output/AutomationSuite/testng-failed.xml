@@ -10,7 +10,9 @@
       <class name="tests.HotelTest">
         <methods>
           <include name="hotelFilterApplicationTest"/>
+          <include name="hotelSortResults"/>
           <include name="setup"/>
+          <include name="hotelSearchWithFutureDatesTest"/>
           <include name="tearDown"/>
           <include name="hotelDetailPageValidation"/>
           <include name="hotelRoomBooking"/>

@@ -19,37 +19,37 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class HotelPage {
-	private WebDriver driver;
-	private WebDriverWait wait;
+	 WebDriver driver;
+	 WebDriverWait wait;
 	Actions actions;
 	String parentWinHandle;
 	
 	@FindBy(className="chHotels")
-	private WebElement hotelIcon;
+	 WebElement hotelIcon;
 	
 	@FindBy(id="city")
-    private WebElement destinationInput;
+     WebElement destinationInput;
 	
 	@FindBy(css=".react-autosuggest__input")
-	private WebElement searchBox;
+	 WebElement searchBox;
 	
 	@FindBy(xpath="(//p[@class='sr_city']/span[@class='blackText']/b)[2]")
-	private WebElement searchItem;
+	 WebElement searchItem;
 	
 	@FindBy(xpath="//label[@for='checkin']")
-	private WebElement checkInField;
+	 WebElement checkInField;
 	
 	@FindBy(xpath="//label[@for='checkout']")
-	private WebElement checkOutField;
+	 WebElement checkOutField;
 	
 	@FindBy(css = ".btnApplyNew")
     WebElement applyBtn;
 	
 	@FindBy(xpath="//button[@id='hsw_search_button']")
-    private WebElement searchButton;
+     WebElement searchButton;
 	
 	@FindBy(xpath="//div[@id='hotelListingContainer']")
-    private WebElement searchResults;
+     WebElement searchResults;
 	
 	@FindBy(xpath = "//span[@aria-label='Next Month']")
     WebElement nextMonthBtn;
