@@ -1,69 +1,46 @@
 pipeline {
-
     agent {
-
         docker {
-
             image 'maven:3.9.6-eclipse-temurin-17'
-
         }
-
     }
 
     stages {
-
         stage('Checkout') {
-
             steps {
-
-            	echo "Code started in docker"
-
-                // Pull code from Git
-
+                echo "Checking out source code..."
                 checkout scm
-
             }
-
         }
 
         stage('Build & Test') {
-
             steps {
-
-                // Run Maven build & tests inside container
-
+                echo "Running Maven build & tests..."
                 sh 'mvn clean test'
-
-                echo "Code executed in docker"
-
             }
-
         }
 
-        stage('Report') {
-
+        stage('Reports') {
             steps {
+                echo "Publishing reports..."
+                // Archive TestNG results as JUnit
+                junit 'target/surefire-reports/*.xml'
 
-                // Archive test results & HTML reports
-
-                junit '/target/surefire-reports/*.xml'
-
+                // Publish Extent Report (HTML)
                 publishHTML([allowMissing: false,
-
                     alwaysLinkToLastBuild: true,
-
                     keepAll: true,
-
                     reportDir: 'target',
-
                     reportFiles: 'ExtentReport.html',
-
                     reportName: 'Extent Report'])
-
             }
-
         }
-
     }
 
+    post {
+        always {
+            echo "Archiving results..."
+            archiveArtifacts artifacts: 'target/**/*.html', fingerprint: true
+        }
+    }
 }
